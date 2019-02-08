@@ -4,6 +4,7 @@ JS frontend
 This project is a retrofit of https://github.com/yahilmadakiya/react-weather-app
 
 Setup
+
 Clone the project, install the dependencies, and run the project.
 
 git clone
