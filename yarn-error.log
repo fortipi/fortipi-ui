@@ -1,0 +1,52 @@
+Arguments: 
+  /usr/local/Cellar/node/8.4.0/bin/node /usr/local/Cellar/yarn/0.27.5_1/libexec/bin/yarn.js
+
+PATH: 
+  /usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/GE/bin
+
+Yarn version: 
+  0.27.5
+
+Node version: 
+  8.4.0
+
+Platform: 
+  darwin x64
+
+npm manifest: 
+  {
+    "name": "react-pwa",
+    "version": "0.1.0",
+    "private": true,
+    "dependencies": {
+      "bootstrap": "^3.3.7",
+      "react": "^16.4.0",
+      "react-dom": "^16.4.0",
+      "react-scripts": "1.1.4"
+    },
+    "scripts": {
+      "start": "react-scripts start",
+      "build": "react-scripts build",
+      "test": "react-scripts test --env=jsdom",
+      "eject": "react-scripts eject"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
+
+Trace: 
+  Error: https://registry.yarnpkg.com/bootstrap: tunneling socket could not be established, cause=getaddrinfo ENOTFOUND pitc-zscaler-americas-cincinnati3pr.proxy.corporate.ge.com pitc-zscaler-americas-cincinnati3pr.proxy.corporate.ge.com:80
+      at ClientRequest.onError (/usr/local/Cellar/yarn/0.27.5_1/libexec/lib/yarn-cli.js:128400:17)
+      at Object.onceWrapper (events.js:316:30)
+      at emitOne (events.js:115:13)
+      at ClientRequest.emit (events.js:210:7)
+      at Socket.socketErrorListener (_http_client.js:401:9)
+      at emitOne (events.js:115:13)
+      at Socket.emit (events.js:210:7)
+      at emitErrorNT (internal/streams/destroy.js:64:8)
+      at _combinedTickCallback (internal/process/next_tick.js:138:11)
+      at process._tickCallback (internal/process/next_tick.js:180:9)
