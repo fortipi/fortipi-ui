@@ -1,4 +1,5 @@
 import React from 'react';
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
 import { withStyles } from '@material-ui/core/styles';
@@ -14,9 +15,18 @@ import Badge from '@material-ui/core/Badge';
 import MenuIcon from '@material-ui/icons/Menu';
 import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
 import NotificationsIcon from '@material-ui/icons/Notifications';
-import { mainListItems, secondaryListItems } from './listItems';
+// import { mainListItems, secondaryListItems } from './listItems';
 import SimpleLineChart from './SimpleLineChart';
 import SimpleTable from './SimpleTable';
+
+
+import ListItem from '@material-ui/core/ListItem';
+import ListItemIcon from '@material-ui/core/ListItemIcon';
+import ListItemText from '@material-ui/core/ListItemText';
+import ListSubheader from '@material-ui/core/ListSubheader';
+import DashboardIcon from '@material-ui/icons/Dashboard';
+import BarChartIcon from '@material-ui/icons/BarChart';
+import SettingsIcon from '@material-ui/icons/Settings';
 
 const drawerWidth = 240;
 
@@ -86,12 +96,7 @@ const styles = theme => ({
     height: '100vh',
     overflow: 'auto',
   },
-  chartContainer: {
-    marginLeft: -22,
-  },
-  tableContainer: {
-    height: 320,
-  },
+
   h5: {
     marginBottom: theme.spacing.unit * 2,
   },
@@ -114,6 +119,7 @@ class Dashboard extends React.Component {
     const { classes } = this.props;
 
     return (
+      <Router>
       <div className={classes.root}>
         <CssBaseline />
         <AppBar
@@ -161,28 +167,86 @@ class Dashboard extends React.Component {
             </IconButton>
           </div>
           <Divider />
-          <List>{mainListItems}</List>
+          <Link to="/">
+              <ListItem button component={Link} to="/">
+                <ListItemIcon>
+                  <DashboardIcon />
+                </ListItemIcon>
+                <ListItemText primary="Dashboard" />
+              </ListItem>
+              </Link>
+              <ListItem button component={Link} to="/reports">
+                <ListItemIcon>
+                  <BarChartIcon />
+                </ListItemIcon>
+                <ListItemText primary="Reports" />
+              </ListItem>
+              <ListItem button component={Link} to="/settings">
+                <ListItemIcon>
+                  <SettingsIcon />
+                </ListItemIcon>
+                <ListItemText primary="Settings" />
+              </ListItem>
           <Divider />
-          <List>{secondaryListItems}</List>
+
         </Drawer>
         <main className={classes.content}>
           <div className={classes.appBarSpacer} />
-          <Typography variant="h4" gutterBottom component="h2">
-            
-          </Typography>
-          <Typography component="div" className={classes.chartContainer}>
-            <SimpleLineChart />
-          </Typography>
-          <Typography variant="h4" gutterBottom component="h2">
 
-          </Typography>
-          <div className={classes.tableContainer}>
-            <SimpleTable />
-          </div>
+          <Route exact path="/" component={Home} />
+          <Route path="/reports" render={(props) => <Reports {...props} isAuthed={true} />}/>
+          <Route path="/settings" component={Settings} />
+
         </main>
       </div>
+      </Router>
     );
   }
+}
+
+
+function Home() {
+  return (
+    <Typography variant="h4" gutterBottom component="h2">
+      Dashboard
+    </Typography>
+  );
+}
+const reportStyle = {
+
+  /*Dont forget to move these styles to the reports component
+  chartContainer: {
+    marginLeft: -22,
+  },
+  tableContainer: {
+    height: 320,
+  },
+  */
+};
+
+function Reports() {
+  return (
+    <div>
+    <Typography variant="h4" gutterBottom component="h2">
+      Reports
+    </Typography>
+    <Typography component="div">
+      <SimpleLineChart />
+    </Typography>
+    <div style={reportStyle}>
+      <SimpleTable />
+    </div>
+    </div>
+  );
+}
+function Settings() {
+  return (
+    <div>
+      <Typography variant="h4" gutterBottom component="h2">
+        Settings
+      </Typography>
+    </div>
+  );
 }
 
 Dashboard.propTypes = {
