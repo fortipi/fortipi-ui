@@ -18,7 +18,8 @@ import NotificationsIcon from '@material-ui/icons/Notifications';
 // import { mainListItems, secondaryListItems } from './listItems';
 import SimpleLineChart from './SimpleLineChart';
 import SimpleTable from './SimpleTable';
-
+import Form from './Form';
+import Widgets from './Widgets';
 
 import ListItem from '@material-ui/core/ListItem';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
@@ -167,14 +168,12 @@ class Dashboard extends React.Component {
             </IconButton>
           </div>
           <Divider />
-          <Link to="/">
               <ListItem button component={Link} to="/">
                 <ListItemIcon>
                   <DashboardIcon />
                 </ListItemIcon>
                 <ListItemText primary="Dashboard" />
               </ListItem>
-              </Link>
               <ListItem button component={Link} to="/reports">
                 <ListItemIcon>
                   <BarChartIcon />
@@ -207,9 +206,12 @@ class Dashboard extends React.Component {
 
 function Home() {
   return (
+    <div>
     <Typography variant="h4" gutterBottom component="h2">
       Dashboard
     </Typography>
+    <Widgets/>
+    </div>
   );
 }
 const reportStyle = {
@@ -245,6 +247,7 @@ function Settings() {
       <Typography variant="h4" gutterBottom component="h2">
         Settings
       </Typography>
+      <Form/>
     </div>
   );
 }
