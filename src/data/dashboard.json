@@ -1,0 +1,30 @@
+[
+  {
+    "id":1,
+    "reading":"Temperature",
+    "current_value":23,
+    "unit_of_measure": " F",
+    "status_color":"red"
+  },
+  {
+    "id":2,
+    "reading":"Humidity",
+    "current_value":67,
+    "unit_of_measure": " %",
+    "status_color":"green"
+  },
+  {
+    "id":3,
+    "reading":"Pressure",
+    "current_value":30.12,
+    "unit_of_measure": " mbp",
+    "status_color":"yellow"
+  },
+  {
+    "id":4,
+    "reading":"Light Intensity",
+    "current_value":8200,
+    "unit_of_measure": " lm",
+    "status_color":"yellow"
+  }
+]

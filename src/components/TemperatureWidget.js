@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
 import red from '@material-ui/core/colors/red';
 import yellow from '@material-ui/core/colors/yellow';
+import green from '@material-ui/core/colors/green';
 import SvgIcon from '@material-ui/core/SvgIcon';
 
 const styles = theme => ({
@@ -31,6 +32,7 @@ class TemperatureWidget extends Component {
     const current_value='65';
     const ideal_value='72';
     const acceptable_deviation='10';
+    const status_color=green[400];
     const status_color1=yellow[400];
     const status_color2=red[400];
     const unit="F";
@@ -47,8 +49,8 @@ class TemperatureWidget extends Component {
             <svg {...svgProps}>
               <defs>
                 <linearGradient id="gradient1">
-                  <stop offset="10%" stopColor={status_color2} />
-                  <stop offset="270%" stopColor={status_color1} />
+                  <stop offset="10%" stopColor={status_color1} />
+                  <stop offset="270%" stopColor={data.status_color} />
                 </linearGradient>
               </defs>
               {React.cloneElement(svgProps.children[0], { fill: 'url(#gradient1)' })}
