@@ -1,16 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Widget from './Widget.js'
-import TemperatureWidget from './TemperatureWidget';
-import PressureWidget from './PressureWidget';
-import HumidityWidget from './HumidityWidget';
-import LightWidget from './LightWidget';
-import Card from '@material-ui/core/Card';
-import CardContent from '@material-ui/core/CardContent';
+import Grid from '@material-ui/core/Grid';
+import Paper from '@material-ui/core/Paper';
 import Typography from '@material-ui/core/Typography';
 import { withStyles } from '@material-ui/core/styles';
-import Paper from '@material-ui/core/Paper';
-import Grid from '@material-ui/core/Grid';
+import Widget from './Widget.js'
 import DashboardData from '../data/dashboard.json';
 
 const styles = theme => ({
@@ -49,21 +43,19 @@ function Widgets(props) {
       <div className={classes.root}>
         <Grid container spacing={24}>
 
-        {dashdata.map((dashItem, index)=>{
-        return <Grid item Grid item xs={12} sm={6}>
-          <Paper className={classes.paper}>
-            <Typography className={classes.title} color="textSecondary" gutterBottom>
-              {dashItem.reading}
-            </Typography>
-            <Widget id={index}
-              current_value={dashItem.current_value}
-              unit={dashItem.unit_of_measure}
-              status_color={dashItem.status_color}
-              fillid={'url(#gradient' + index +')'}/>
-            </Paper>
-          </Grid>
-        })}
-
+          {dashdata.map((dashItem, index)=>{
+            return <Grid item Grid item xs={12} sm={6}>
+              <Paper className={classes.paper}>
+                <Typography className={classes.title} color="textSecondary" gutterBottom>
+                  {dashItem.reading}
+                </Typography>
+                <Widget
+                  current_value={dashItem.current_value}
+                  unit={dashItem.unit_of_measure}
+                  status_color={dashItem.status_color}/>
+                </Paper>
+              </Grid>
+          })}
 
           <Grid item xs={12}>
             <Paper className={classes.paper}>Video Here

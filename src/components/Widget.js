@@ -1,47 +1,22 @@
 import React, { Component } from 'react';
-import PropTypes from 'prop-types';
-import { withStyles } from '@material-ui/core/styles';
+import SvgIcon from '@material-ui/core/SvgIcon';
 import red from '@material-ui/core/colors/red';
 import yellow from '@material-ui/core/colors/yellow';
 import green from '@material-ui/core/colors/green';
-import SvgIcon from '@material-ui/core/SvgIcon';
 
-
-
-const styles = theme => ({
-  root: {
-    display: 'flex',
-    justifyContent: 'center',
-    alignItems: 'flex-end',
-  },
-  icon: {
-    margin: theme.spacing.unit * 2,
-  },
-  iconHover: {
-    margin: theme.spacing.unit * 2,
-    '&:hover': {
-      color: red[800],
-    },
-  },
-});
 
 class Widget extends Component {
   render(){
     const data=this.props;
-    const id = data.id;
     const STATUS = {
       red: red[400],
       yellow: yellow[400],
       green: green[400],
     };
-    // const status_color=green[400];
-    const status_color1=STATUS[data.status_color];
-    const status_color2=yellow[400];
-    const fillid = 'url(#gradient3)';
-
+    const status_color=STATUS[data.status_color];
     const fillStyle = {
       fontSize: '10em',
-      fill : status_color1,
+      fill : status_color,
     };
 
 
@@ -67,4 +42,4 @@ function SunIcon(props) {
   );
 }
 
-export default withStyles(styles)(Widget);
+export default Widget;

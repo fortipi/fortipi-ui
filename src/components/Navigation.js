@@ -103,7 +103,7 @@ const styles = theme => ({
   },
 });
 
-class Dashboard extends React.Component {
+class Navigation extends React.Component {
   state = {
     open: true,
   };
@@ -252,8 +252,8 @@ function Settings() {
   );
 }
 
-Dashboard.propTypes = {
+Navigation.propTypes = {
   classes: PropTypes.object.isRequired,
 };
 
-export default withStyles(styles)(Dashboard);
+export default withStyles(styles)(Navigation);
