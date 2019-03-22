@@ -20,6 +20,7 @@ import SimpleLineChart from './SimpleLineChart';
 import SimpleTable from './SimpleTable';
 import Form from './Form';
 import Widgets from './Widgets';
+import Reports from './Reports';
 
 import ListItem from '@material-ui/core/ListItem';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
@@ -28,6 +29,8 @@ import ListSubheader from '@material-ui/core/ListSubheader';
 import DashboardIcon from '@material-ui/icons/Dashboard';
 import BarChartIcon from '@material-ui/icons/BarChart';
 import SettingsIcon from '@material-ui/icons/Settings';
+
+
 
 const drawerWidth = 240;
 
@@ -214,33 +217,7 @@ function Home() {
     </div>
   );
 }
-const reportStyle = {
 
-  /*Dont forget to move these styles to the reports component
-  chartContainer: {
-    marginLeft: -22,
-  },
-  tableContainer: {
-    height: 320,
-  },
-  */
-};
-
-function Reports() {
-  return (
-    <div>
-    <Typography variant="h4" gutterBottom component="h2">
-      Reports
-    </Typography>
-    <Typography component="div">
-      <SimpleLineChart />
-    </Typography>
-    <div style={reportStyle}>
-      <SimpleTable />
-    </div>
-    </div>
-  );
-}
 function Settings() {
   return (
     <div>

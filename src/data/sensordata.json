@@ -1,0 +1,385 @@
+[{
+		"date": "02/02/2020",
+    "time": "2:05pm",
+		"temperature": 76,
+		"humidity": 50,
+    "pressure": 30.5,
+    "light": 8000
+},
+{
+		"date": "02/02/2020",
+    "time": "2:00pm",
+		"temperature": 76,
+		"humidity": 49,
+    "pressure": 30.5,
+    "light": 8000
+},
+{
+		"date": "02/02/2020",
+    "time": "1:55pm",
+		"temperature": 75,
+		"humidity": 48,
+    "pressure": 30.5,
+    "light": 8000
+},
+{
+		"date": "02/02/2020",
+    "time": "1:50pm",
+		"temperature": 75,
+		"humidity": 47,
+    "pressure": 30.5,
+    "light": 8000
+},
+{
+		"date": "02/02/2020",
+    "time": "1:45pm",
+		"temperature": 74,
+		"humidity": 46,
+    "pressure": 30.5,
+    "light": 8000
+},
+{
+		"date": "02/02/2020",
+    "time": "1:40pm",
+		"temperature": 74,
+		"humidity": 45,
+    "pressure": 30.5,
+    "light": 8000
+},
+{
+		"date": "02/02/2020",
+    "time": "1:35pm",
+		"temperature": 74,
+		"humidity": 44,
+    "pressure": 30.5,
+    "light": 8000
+},
+{
+		"date": "02/02/2020",
+    "time": "1:30pm",
+		"temperature": 73,
+		"humidity": 43,
+    "pressure": 30.5,
+    "light": 8000
+},
+{
+		"date": "02/02/2020",
+    "time": "1:25pm",
+		"temperature": 73,
+		"humidity": 44,
+    "pressure": 30.5,
+    "light": 8000
+},
+{
+		"date": "02/02/2020",
+    "time": "1:20pm",
+		"temperature": 72,
+		"humidity": 45,
+    "pressure": 30.5,
+    "light": 8000
+},
+{
+		"date": "02/02/2020",
+    "time": "1:15pm",
+		"temperature": 72,
+		"humidity": 46,
+    "pressure": 30.5,
+    "light": 8000
+},
+{
+		"date": "02/02/2020",
+    "time": "1:10pm",
+		"temperature": 71,
+		"humidity": 47,
+    "pressure": 30.5,
+    "light": 8000
+},
+{
+		"date": "02/02/2020",
+    "time": "1:05pm",
+		"temperature": 71,
+		"humidity": 48,
+    "pressure": 30.5,
+    "light": 8000
+},
+{
+		"date": "02/02/2020",
+    "time": "1:00pm",
+		"temperature": 70,
+		"humidity": 48,
+    "pressure": 30.5,
+    "light": 8000
+},
+{
+		"date": "02/02/2020",
+    "time": "12:55pm",
+		"temperature": 70,
+		"humidity": 47,
+    "pressure": 30.5,
+    "light": 8000
+},
+{
+		"date": "02/02/2020",
+    "time": "12:50pm",
+		"temperature": 69,
+		"humidity": 47,
+    "pressure": 30.5,
+    "light": 8000
+},
+{
+		"date": "02/02/2020",
+    "time": "12:45pm",
+		"temperature": 69,
+		"humidity": 46,
+    "pressure": 30.5,
+    "light": 8000
+},
+{
+		"date": "02/02/2020",
+    "time": "12:40pm",
+		"temperature": 68,
+		"humidity": 60,
+    "pressure": 30.5,
+    "light": 8000
+},
+{
+		"date": "02/02/2020",
+    "time": "12:35pm",
+		"temperature": 67,
+		"humidity": 60,
+    "pressure": 30.5,
+    "light": 8000
+},
+{
+		"date": "02/02/2020",
+    "time": "12:30pm",
+		"temperature": 66,
+		"humidity": 60,
+    "pressure": 30.5,
+    "light": 8000
+},
+{
+		"date": "02/02/2020",
+    "time": "12:25pm",
+		"temperature": 66,
+		"humidity": 60,
+    "pressure": 30.5,
+    "light": 8000
+},
+{
+		"date": "02/02/2020",
+    "time": "12:20pm",
+		"temperature": 65,
+		"humidity": 60,
+    "pressure": 30.5,
+    "light": 8000
+},
+{
+		"date": "02/02/2020",
+    "time": "12:15pm",
+		"temperature": 65,
+		"humidity": 60,
+    "pressure": 30.5,
+    "light": 8000
+},
+{
+		"date": "02/02/2020",
+    "time": "12:10pm",
+		"temperature": 64,
+		"humidity": 60,
+    "pressure": 30.5,
+    "light": 8000
+},
+{
+		"date": "02/02/2020",
+    "time": "12:05pm",
+		"temperature": 64,
+		"humidity": 60,
+    "pressure": 30.5,
+    "light": 8000
+},
+{
+		"date": "02/02/2020",
+    "time": "12:00pm",
+		"temperature": 64,
+		"humidity": 60,
+    "pressure": 30.5,
+    "light": 8000
+},
+{
+		"date": "02/02/2020",
+    "time": "11:55am",
+		"temperature": 63,
+		"humidity": 60,
+    "pressure": 30.5,
+    "light": 8000
+},
+{
+		"date": "02/02/2020",
+    "time": "11:50am",
+		"temperature": 63,
+		"humidity": 60,
+    "pressure": 30.5,
+    "light": 8000
+},
+{
+		"date": "02/02/2020",
+    "time": "11:45am",
+		"temperature": 62,
+		"humidity": 60,
+    "pressure": 30.5,
+    "light": 8000
+},
+{
+		"date": "02/02/2020",
+    "time": "11:40am",
+		"temperature": 62,
+		"humidity": 60,
+    "pressure": 30.5,
+    "light": 8000
+},
+{
+		"date": "02/02/2020",
+    "time": "11:35am",
+		"temperature": 62,
+		"humidity": 60,
+    "pressure": 30.5,
+    "light": 8000
+},
+{
+		"date": "02/02/2020",
+    "time": "11:30am",
+		"temperature": 61,
+		"humidity": 60,
+    "pressure": 30.5,
+    "light": 8000
+},
+{
+		"date": "02/02/2020",
+    "time": "11:25am",
+		"temperature": 61,
+		"humidity": 60,
+    "pressure": 30.5,
+    "light": 8000
+},
+{
+		"date": "02/02/2020",
+    "time": "11:20am",
+		"temperature": 61,
+		"humidity": 60,
+    "pressure": 30.5,
+    "light": 8000
+},
+{
+		"date": "02/02/2020",
+    "time": "11:15am",
+		"temperature": 60,
+		"humidity": 60,
+    "pressure": 30.5,
+    "light": 8000
+},
+{
+		"date": "02/02/2020",
+    "time": "11:10am",
+		"temperature": 60,
+		"humidity": 60,
+    "pressure": 30.5,
+    "light": 8000
+},
+{
+		"date": "02/02/2020",
+    "time": "11:05am",
+		"temperature": 60,
+		"humidity": 60,
+    "pressure": 30.5,
+    "light": 8000
+},
+{
+		"date": "02/02/2020",
+    "time": "11:00am",
+		"temperature": 60,
+		"humidity": 60,
+    "pressure": 30.5,
+    "light": 8000
+},
+{
+		"date": "02/02/2020",
+    "time": "10:55am",
+		"temperature": 59,
+		"humidity": 60,
+    "pressure": 30.5,
+    "light": 8000
+},
+{
+		"date": "02/02/2020",
+    "time": "10:50am",
+		"temperature": 59,
+		"humidity": 60,
+    "pressure": 30.5,
+    "light": 8000
+},
+{
+		"date": "02/02/2020",
+    "time": "10:45am",
+		"temperature": 59,
+		"humidity": 49,
+    "pressure": 30.5,
+    "light": 8000
+},
+{
+		"date": "02/02/2020",
+    "time": "10:40am",
+		"temperature": 59,
+		"humidity": 49,
+    "pressure": 30.5,
+    "light": 8000
+},
+{
+		"date": "02/02/2020",
+    "time": "10:35am",
+		"temperature": 59,
+		"humidity": 50,
+    "pressure": 30.5,
+    "light": 8000
+},
+{
+		"date": "02/02/2020",
+    "time": "10:30am",
+		"temperature": 58,
+		"humidity": 50,
+    "pressure": 30.5,
+    "light": 8000
+},
+{
+		"date": "02/02/2020",
+    "time": "10:25am",
+		"temperature": 58,
+		"humidity": 48,
+    "pressure": 30.5,
+    "light": 8000
+},
+{
+		"date": "02/02/2020",
+    "time": "10:20am",
+		"temperature": 57,
+		"humidity": 47,
+    "pressure": 30.5,
+    "light": 8000
+},
+{
+		"date": "02/02/2020",
+    "time": "10:15am",
+		"temperature": 57,
+		"humidity": 46,
+    "pressure": 30.5,
+    "light": 8000
+},
+{
+		"date": "02/02/2020",
+    "time": "10:10am",
+		"temperature": 57,
+		"humidity": 45,
+    "pressure": 30.5,
+    "light": 8000
+}
+]
